@@ -70,9 +70,12 @@
 
     .timepicker-hour, .timepicker-minute, .timepicker-second
     {
-        width: 100%;
-        font-weight: bold;
-        font-size: 1.2em;
+		span
+        {
+			font-size: 1.2em;
+			font-weight: bold;
+			color: #000000;
+		}
     }
 
     table[data-hour-format="12"] .separator
@@ -147,7 +150,7 @@
             height: 54px;
             line-height: 54px;
             float: left;
-            margin: 2px;
+            margin: 0;
             cursor: pointer;
             border-radius: 4px;
 

@@ -797,8 +797,8 @@
 		},
 
         tpGlobal = {
-            hourTemplate: '<span data-action="showHours" data-time-component="hours" class="timepicker-hour"></span>',
-            minuteTemplate: '<span data-action="showMinutes" data-time-component="minutes" class="timepicker-minute"></span>'
+            hourTemplate: '<a href="#" class="btn timepicker-hour" data-action="showHours"><span data-time-component="hours"></span></a>',
+            minuteTemplate: '<a href="#" class="btn timepicker-minute" data-action="showMinutes"><span data-time-component="minutes"></span></a>'
         };
 
         dpGlobal.template =
@@ -815,7 +815,7 @@
         tpGlobal.getTemplate = function () {
             return (
                 '<div class="timepicker-picker">' +
-                    '<table class="table-condensed">' +
+                    '<table>' +
 						'<tr>' +
 							'<td><a href="#" class="btn" data-action="incrementHours"><span class="' + picker.options.icons.up + '"></span></a></td>' +
 							'<td class="separator"></td>' +
